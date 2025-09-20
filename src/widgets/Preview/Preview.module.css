@@ -1,5 +1,5 @@
 .previewWrapper {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .previewContent {
@@ -31,6 +31,6 @@
 }
 
 .previewRightColumn > img {
-  height: 500px;
+  height: 600px;
   width: auto;
 }

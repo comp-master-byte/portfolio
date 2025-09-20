@@ -2,7 +2,7 @@ import { memo } from "react";
 import styles from './Preview.module.css';
 import { Button } from "@/shared";
 import Image from "next/image";
-import karen from '../../shared/assets/karen2.png';
+import karen from '../../shared/assets/karen3.png';
 
 export const Preview = memo(function Preview() {
   return (
@@ -17,7 +17,7 @@ export const Preview = memo(function Preview() {
           <Button className={styles.previewButton}>Скачать резюме</Button>
         </div>
         <div className={styles.previewRightColumn}>
-
+          <Image src={karen} alt="" />
         </div>
       </div>
     </section>
