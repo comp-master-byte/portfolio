@@ -1,6 +1,10 @@
 @import './_reset.css';
 @import './_variables.css';
 
+body {
+  background-color: #1e1e1e;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
