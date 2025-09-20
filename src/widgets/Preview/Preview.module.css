@@ -1,0 +1,36 @@
+.previewWrapper {
+  margin-top: 100px;
+}
+
+.previewContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.previewLeftColumn {
+  max-width: 50%;
+}
+
+.previewTitle {
+  font-size: 42px;
+  color: var(--primary-text-color);
+  line-height: 1.25;
+}
+
+.previewSubtitle {
+  color: var(--primary-text-color);
+  font-size: 20px;
+  margin-top: 10px;
+  line-height: 1.25;
+  opacity: .5;
+}
+
+.previewButton {
+  margin-top: 30px;
+}
+
+.previewRightColumn > img {
+  height: 500px;
+  width: auto;
+}
