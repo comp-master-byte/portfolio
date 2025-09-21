@@ -2,7 +2,8 @@ import { memo } from "react";
 import styles from './Preview.module.css';
 import { Button } from "@/shared";
 import Image from "next/image";
-import karen from '../../shared/assets/karen3.png';
+import karen from '@/shared/assets/karen3.png';
+import { PreviewIconsList } from "./PreviewIconsList";
 
 export const Preview = memo(function Preview() {
   return (
@@ -15,7 +16,10 @@ export const Preview = memo(function Preview() {
             компаниях как Osla, Клик.Страхование и Сбербанк
           </p>
           <Button className={styles.previewButton}>Скачать резюме</Button>
+        
+          <PreviewIconsList />
         </div>
+
         <div className={styles.previewRightColumn}>
           <Image src={karen} alt="" />
         </div>

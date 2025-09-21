@@ -34,3 +34,14 @@
   height: 600px;
   width: auto;
 }
+
+.previewTechnologiesList {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.previewTechnologyIcon {
+  width: 80px;
+  height: 80px;
+}
