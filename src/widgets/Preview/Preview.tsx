@@ -12,13 +12,14 @@ export const Preview = memo(function Preview() {
         <div className={styles.previewLeftColumn}>
           <h1 className={styles.previewTitle}>Акопьян Карэн <br /> Fullstack-разработчик</h1>
           <p className={styles.previewSubtitle}>
-            Более 5 лет занимаюсь Web-разработкой,  за данный период времени мне удалось поработать в таких 
+            Более 5 лет занимаюсь Web-разработкой, <br />  за данный период времени мне удалось поработать <br /> в таких 
             компаниях как Osla, Клик.Страхование и Сбербанк
           </p>
           <Button className={styles.previewButton}>Скачать резюме</Button>
         
-          <PreviewIconsList />
         </div>
+        
+        <PreviewIconsList />
 
         <div className={styles.previewRightColumn}>
           <Image src={karen} alt="" />
