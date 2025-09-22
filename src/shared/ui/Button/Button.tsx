@@ -15,7 +15,11 @@ export function Button({
   onClick,
 }: ButtonProps) {
   return (
-    <button className={classNames(styles.button, className)}>
+    <button 
+      className={classNames(styles.button, className, {
+        [styles.secondary]: variant === 'secondary'
+      })}
+    >
       {children}
     </button>
   )

@@ -15,3 +15,14 @@
   box-shadow: 0 0 15px var(--primary-color);
   transform: scale(1.075);
 }
+
+.secondary {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  transition: box-shadow .3s ease, background-color .3s ease, transform .3s ease;
+}
+
+.secondary:hover {
+  box-shadow: 0 0 15px var(--primary-color);
+  background-color: var(--primary-color);
+}

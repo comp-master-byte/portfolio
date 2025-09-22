@@ -4,6 +4,7 @@ import {
   TypeScriptIcon, 
   NodejsIcon,
   ExpressIcon,
+  GithubIcon,
 } from "./icons";
 
 const icons = {
@@ -12,6 +13,7 @@ const icons = {
   typescript: TypeScriptIcon,
   node: NodejsIcon,
   express: ExpressIcon,
+  github: GithubIcon,
 };
 
 type IconName = keyof typeof icons;

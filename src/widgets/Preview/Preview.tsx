@@ -1,25 +1,34 @@
 import { memo } from "react";
 import styles from './Preview.module.css';
-import { Button } from "@/shared";
+import { Button, Icon, SocialMediaIcon } from "@/shared";
 import Image from "next/image";
 import karen from '@/shared/assets/karen3.png';
 import { PreviewIconsList } from "./PreviewIconsList";
+
+function PreviewMainContent() {
+  return (
+    <div className={styles.previewLeftColumn}>
+      <h1 className={styles.previewTitle}>Акопьян Карэн <br /> Fullstack-разработчик</h1>
+      <p className={styles.previewSubtitle}>
+        Более 5 лет занимаюсь Web-разработкой,  за данный период времени мне удалось поработать в таких 
+        компаниях как Osla, Клик.Страхование и Сбербанк
+      </p>
+      <div className={styles.previewSocialMediaIcons}>
+        <SocialMediaIcon>
+          <Icon name="github" />
+        </SocialMediaIcon>
+      </div>
+      <Button className={styles.previewButton}>Скачать резюме</Button>
+      <PreviewIconsList />
+    </div>
+  )
+}
 
 export const Preview = memo(function Preview() {
   return (
     <section className={styles.previewWrapper}>
       <div className={styles.previewContent}>
-        <div className={styles.previewLeftColumn}>
-          <h1 className={styles.previewTitle}>Акопьян Карэн <br /> Fullstack-разработчик</h1>
-          <p className={styles.previewSubtitle}>
-            Более 5 лет занимаюсь Web-разработкой,  за данный период времени мне удалось поработать в таких 
-            компаниях как Osla, Клик.Страхование и Сбербанк
-          </p>
-          <Button className={styles.previewButton}>Скачать резюме</Button>
-        
-          <PreviewIconsList />
-        </div>
-
+        <PreviewMainContent />
         <div className={styles.previewRightColumn}>
           <Image src={karen} alt="" />
         </div>
