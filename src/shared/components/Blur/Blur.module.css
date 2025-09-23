@@ -1,9 +1,9 @@
 .blurWrapper {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   background-color: var(--primary-color);
-  filter: blur(50px);
+  filter: blur(100px);
   width: 100px;
   height: 100px;
 }

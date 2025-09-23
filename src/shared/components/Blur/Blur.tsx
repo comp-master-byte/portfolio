@@ -1,5 +1,6 @@
 import { memo } from "react";
 import styles from './Blur.module.css';
+import classNames from "classnames";
 
 type BlurProps = {
   width?: number;
@@ -9,6 +10,7 @@ type BlurProps = {
   right?: number;
   bottom?: number;
   left?: number;
+  className?: string;
 }
 
 export const Blur = memo(function({
@@ -18,11 +20,12 @@ export const Blur = memo(function({
   top,
   right,
   bottom,
-  left
+  left,
+  className
 }: BlurProps) {
   return (
     <div 
-      className={styles.blurWrapper}
+      className={classNames(styles.blurWrapper, className)}
       style={{
         filter: `blur(${blur}px)`,
         width,

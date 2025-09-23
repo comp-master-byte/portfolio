@@ -1,0 +1,6 @@
+.aboutMeWrapper {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 30px;
+  margin-top: 30px;
+}

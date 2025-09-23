@@ -1,0 +1,7 @@
+.subtitle {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--primary-text-color);
+  opacity: .5;
+}

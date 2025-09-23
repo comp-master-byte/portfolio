@@ -26,3 +26,11 @@
   box-shadow: 0 0 15px var(--primary-color);
   background-color: var(--primary-color);
 }
+
+.transparent {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: var(--primary-color);
+  box-shadow: none;
+}

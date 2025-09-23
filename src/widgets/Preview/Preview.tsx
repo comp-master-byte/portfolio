@@ -1,6 +1,6 @@
 import { memo } from "react";
 import styles from './Preview.module.css';
-import { Button, Icon, SocialMediaIcon } from "@/shared";
+import { Button, Icon, SocialMediaIcon, Subtitle } from "@/shared";
 import Image from "next/image";
 import karen from '@/shared/assets/karen3.png';
 import { PreviewIconsList } from "./PreviewIconsList";
@@ -9,16 +9,20 @@ function PreviewMainContent() {
   return (
     <div className={styles.previewLeftColumn}>
       <h1 className={styles.previewTitle}>Акопьян Карэн <br /> Fullstack-разработчик</h1>
-      <p className={styles.previewSubtitle}>
+      <Subtitle>
         Более 5 лет занимаюсь Web-разработкой,  за данный период времени мне удалось поработать в таких 
         компаниях как Osla, Клик.Страхование и Сбербанк
-      </p>
+      </Subtitle>
       <div className={styles.previewSocialMediaIcons}>
         <SocialMediaIcon>
           <Icon name="github" />
         </SocialMediaIcon>
       </div>
-      <Button className={styles.previewButton}>Скачать резюме</Button>
+      <a href="https://github.com/comp-master-byte?tab=repositories" target="_blank">
+        <Button className={styles.previewButton}>
+          Скачать резюме
+        </Button>
+      </a>
       <PreviewIconsList />
     </div>
   )

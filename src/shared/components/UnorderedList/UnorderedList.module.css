@@ -1,0 +1,32 @@
+.unorderedListWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.unorderedListTitle {
+  font-size: 18px;
+  color: var(--primary-color);
+  opacity: .5;  
+  margin-bottom: 15px;
+}
+
+.unorderedListItemTitle {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.unorderedListItemWrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.unorderedListItemPointer {
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+  border-radius: 50%;
+}

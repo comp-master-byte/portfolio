@@ -1,0 +1,18 @@
+.aboutMeWrapper {
+  margin-top: 120px;
+  position: relative;
+}
+
+.aboutMeRightSideBlur {
+  left: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.aboutMeSubtitleWrapper {
+  margin-top: 30px;
+}
+
+.aboutMeTitle {
+  text-align: center;
+}
