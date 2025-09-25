@@ -5,11 +5,11 @@
 .previewContent {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .previewLeftColumn {
   max-width: 50%;
+  margin-top: 80px;
 }
 
 .previewTitle {
@@ -48,4 +48,16 @@
 
 .previewSocialMediaIcons {
   margin-top: 10px;
+}
+
+.previewButtons {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  margin-bottom: 50px;
+}
+
+.previewSocialMediaLink {
+  width: 40px;
+  display: block;
 }

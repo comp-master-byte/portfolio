@@ -14,15 +14,21 @@ function PreviewMainContent() {
         компаниях как Osla, Клик.Страхование и Сбербанк
       </Subtitle>
       <div className={styles.previewSocialMediaIcons}>
-        <SocialMediaIcon>
-          <Icon name="github" />
-        </SocialMediaIcon>
-      </div>
-      <a href="https://github.com/comp-master-byte?tab=repositories" target="_blank">
+          <a className={styles.previewSocialMediaLink} href="https://github.com/comp-master-byte?tab=repositories" target="_blank">
+            <SocialMediaIcon>
+              <Icon name="github" />
+            </SocialMediaIcon>
+          </a>
+        </div>
+      
+      <div className={styles.previewButtons}>
         <Button className={styles.previewButton}>
+          Связаться со мной
+        </Button>
+        <Button className={styles.previewButton} variant="purple">
           Скачать резюме
         </Button>
-      </a>
+      </div>
       <PreviewIconsList />
     </div>
   )

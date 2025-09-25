@@ -3,7 +3,7 @@ import styles from './Button.module.css';
 
 type ButtonProps = {
   children: React.ReactNode;
-  variant?: 'primary' | 'secondary' | 'transparent';
+  variant?: 'primary' | 'purple';
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   className?: string;
 }
@@ -17,8 +17,7 @@ export function Button({
   return (
     <button 
       className={classNames(styles.button, className, {
-        [styles.secondary]: variant === 'secondary',
-        [styles.transparent]: variant === 'transparent',
+        [styles.purple]: variant === 'purple',
       })}
     >
       {children}

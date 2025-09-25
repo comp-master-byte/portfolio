@@ -9,23 +9,11 @@ export function PreviewIconsList() {
         className={styles.previewTechnologyIcon} 
       />
       <Icon 
-        name='next' 
-        width={120} 
-        height={120} 
-        className={styles.previewTechnologyIcon} 
-      />
-      <Icon 
         name='typescript' 
         className={styles.previewTechnologyIcon} 
       />
       <Icon 
         name='node' 
-        className={styles.previewTechnologyIcon} 
-      />
-      <Icon 
-        name='express' 
-        width={140} 
-        height={140} 
         className={styles.previewTechnologyIcon} 
       />
     </div>
