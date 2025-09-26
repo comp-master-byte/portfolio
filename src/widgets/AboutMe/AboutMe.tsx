@@ -8,7 +8,7 @@ export const AboutMe = memo(function AboutMe() {
     <section className={styles.aboutMeWrapper}>
       <div className={styles.aboutMeTitleContent}>
         <Title className={styles.aboutMeTitle}>Обо мне</Title>
-        {/* <NeonContainer className={styles.aboutMeSubtitleWrapper}>
+        <NeonContainer className={styles.aboutMeSubtitleWrapper}>
           <Subtitle className={styles.aboutMeSubtitle}>
             Последние 5 лет я занимаюсь программированием и Web-разработкой.  <br /> <br />
             Начинал свой путь junior разработчиком в компании OSLA, в которой разрабатывал приложение для управление процессом строительства. <br />
@@ -17,11 +17,10 @@ export const AboutMe = memo(function AboutMe() {
             Помимо работы занимаюсь спортом, активно хожу в зал и на бокс. Из увлечений это бильярд и хоккей. 
             В свое свободное время люблю изучать новые технологии и развиваться, и создавать свои проекты.
           </Subtitle>
-        </NeonContainer> */}
+        </NeonContainer>
 
-        
       </div>
-      {/* <AboutMeListItems /> */}
+      <AboutMeListItems />
     </section>
   )
 })

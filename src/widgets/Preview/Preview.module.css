@@ -30,9 +30,24 @@
   margin-top: 30px;
 }
 
+.previewRightColumn {
+  position: relative;
+}
+
 .previewRightColumn > img {
   height: 600px;
   width: auto;
+}
+
+.previewRightColumn:after {
+  content: '';
+  width: 120%;
+  height: 80px;
+  background-color:#1e1e1e;
+  filter: blur(10px);
+  position: absolute;
+  bottom: -50px;
+  right: 0;
 }
 
 .previewTechnologiesList {
